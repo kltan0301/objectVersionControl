@@ -21,8 +21,10 @@ app.use(fileUpload());
 app.use(express.static(__dirname + '/public'));
 //setup routes
 var objectVersionRoutes = require('./routes/objectVersion');
+var apiRoutes = require('./routes/objectVersion_api');
 
 app.use('/', objectVersionRoutes);
+app.use('/api', apiRoutes);
 
 console.log('Server is runing at port: ' + port);
 app.listen(port);

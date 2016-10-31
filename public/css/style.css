@@ -1,0 +1,43 @@
+body {
+  background-color: #2C3E50;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+input {
+  color:black;
+}
+.navbar-custom {
+  background-color: #2C3E50;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+}
+.navbar-custom li:hover {
+  background-color: #E74C3C;
+  color: white;
+}
+.navbar-default .navbar-nav>li>a {
+  font-size: 1.2em;
+  color: white;
+}
+.fileSubmit {
+  background: none;
+  border-radius: 5px;
+}
+.title {
+  color: #E74C3C;
+}
+.navheader-custom {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: #E74C3C !important;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+.fileUpload {
+  background-color: green;
+  height: 20px;
+}
