@@ -31,7 +31,6 @@ router.route('/search')
             }
           }
         });
-        console.log("object is: " + JSON.stringify(obj));
         res.json(obj);
       }else{
         res.json(null);

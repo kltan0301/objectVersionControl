@@ -31,7 +31,6 @@ router.route('/upload')
       }, function(err, foundObject) {
         if (foundObject) {
           if(foundObject.object_changes !== objVersion.object_changes){
-            console.log("overwrite");
             ObjectVersion.update(foundObject, objVersion, {
               upsert: true
             }, function(err, object) {
