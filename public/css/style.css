@@ -31,28 +31,52 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+h1 {
+  font-size: 5em;
+}
+/*Index Page*/
+.csvSample {
+  width: 50%;
+}
 /*Object Query Page*/
 .section {
   align-self: center;
 }
-.searchInput {
-  width: 500px;
+.objectSearch, .dateSearch {
   height: 40px;
   font-size: 1.4em;
   color: black;
+  margin-right: 20px;
+}
+.objectSearch {
+  width: 300px;
+}
+.dateSearch {
+  width: 500px;
 }
 .searchSubmitBtn {
   width: 100px;
   background: none;
   border: 2px solid white;
+  height: 40px;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+.searchSubmitBtn:hover {
+  background-color: #60646D;
 }
 /*CSV upload page*/
 .fileSubmit {
   background: none;
   border-radius: 5px;
+  margin-top: 10px;
 }
 .fileUpload {
-  background-color: green;
-  height: 20px;
+  background-color: white;
+  border: 2px solid white;
+  height: 30px;
+  width: 500px;
+  color: black;
+  font-size: 1.2em;
+  border-radius: 5px;
 }

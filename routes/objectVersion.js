@@ -45,7 +45,7 @@ router.route('/upload')
         }
       });
       if (counter === 1) {
-        res.redirect('/');
+        res.redirect('/upload');
       } else {
         counter--;
       }

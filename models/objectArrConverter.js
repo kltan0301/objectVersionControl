@@ -4,9 +4,10 @@ var ObjectArrConverter = function(fileArr){
   this.convertStringToObjArr = function(){
     var objVersionArr = [];
     //remove header
-    this.fileArr.splice(0,1);
+    this.fileArr.shift();
     //remove last element
-    this.fileArr.splice(fileArr.length-1,1);
+    this.fileArr.pop();
+
     return this.fileArr.map(function(data){
       var newObject = {};
       var rowData = data.split(",");

@@ -3,11 +3,12 @@ $(document).ready(function(){
 
   $searchForm.submit(function(e){
     e.preventDefault();
+    //retrieve input query, takes in current date as default value
     var query = {
       object_type: $(this).serializeArray()[0].value,
-      timestamp: $(this).serializeArray()[1].value
+      timestamp: $(this).serializeArray()[1].value || new Date()
     };
-    console.log(query);
+
     $.ajax({
       url: '/api/search',
       data: query
@@ -17,11 +18,11 @@ $(document).ready(function(){
 });
 
 function addSearchData(data){
-  
   var $resultSection = $('.searchResult');
   $resultSection.empty();
-  $resultSection.append(JSON.stringify(data));
-  // data.forEach(function(object){
-  //   $resultSection.append(JSON.stringify(object));
-  // });
+  if(Object.keys(data).length > 0){
+    $resultSection.append($('<h2>').text(JSON.stringify(data)));
+  }else{
+    $resultSection.append($('<h2>').text("Object not found"));
+  }
 }
