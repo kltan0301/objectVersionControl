@@ -1,10 +1,8 @@
+/*Main layout*/
 body {
   background-color: #2C3E50;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
-}
-input {
-  color:black;
 }
 .navbar-custom {
   background-color: #2C3E50;
@@ -21,10 +19,6 @@ input {
   font-size: 1.2em;
   color: white;
 }
-.fileSubmit {
-  background: none;
-  border-radius: 5px;
-}
 .title {
   color: #E74C3C;
 }
@@ -35,7 +29,28 @@ input {
 }
 .mainContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+/*Object Query Page*/
+.section {
+  align-self: center;
+}
+.searchInput {
+  width: 500px;
+  height: 40px;
+  font-size: 1.4em;
+  color: black;
+}
+.searchSubmitBtn {
+  width: 100px;
+  background: none;
+  border: 2px solid white;
+}
+/*CSV upload page*/
+.fileSubmit {
+  background: none;
+  border-radius: 5px;
 }
 .fileUpload {
   background-color: green;

@@ -1,10 +1,15 @@
-<form action="/" method="GET" class="queryForm">
-  <label for="inputBox">
-    <input id="inputBox" type="text" name="objectType" placeholder="Search for an object">
-  </label>
-  <input type="submit" name="name" value="Query">
-</form>
+<div class="section">
+  <form action="/" method="GET" class="queryForm">
+    <label for="objectType">
+      <input class="searchInput" id="objectType" type="text" name="objectType" placeholder="Search for an object">
+    </label>
+    <label for="objectDate">
+      <input class="searchInput" id="objectDate" type="date" name="objectDate" placeholder="Enter a date">
+    </label>
+    <input class="searchSubmitBtn" type="submit" name="name" value="Query">
+  </form>
+</div>
 
-<div class="searchResult">
+<div class="searchResult section">
   <h1>Hello</h1>
 </div>
