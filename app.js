@@ -27,4 +27,4 @@ app.use('/', objectVersionRoutes);
 app.use('/api', apiRoutes);
 
 console.log('Server is runing at port: ' + port);
-app.listen(port);
+app.listen(process.env.PORT || port);
